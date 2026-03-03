@@ -38,6 +38,7 @@ print(type(e1.embeddings[0].values))
 # Checking Cosine Similarity.
 
 from sklearn.metrics.pairwise import cosine_similarity
+cs=cosine_similarity()
 
 
-print(cosine_similarity(X=[e1.embeddings[1].values],Y=[e1.embeddings[2].values]))
+print(cs(X=[e1.embeddings[1].values],Y=[e1.embeddings[2].values]))
